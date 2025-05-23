@@ -1,29 +1,29 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: #f8f8f8;
 }
 header {
-  background-color: #002244;
+  background-color: #001d3d;
   color: white;
   padding: 20px;
   text-align: center;
 }
 nav {
-  background-color: #e4e4e4;
+  background-color: #eaeaea;
   padding: 10px;
   text-align: center;
 }
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #002244;
+  color: #001d3d;
 }
 main {
   padding: 20px;
 }
 footer {
-  background-color: #002244;
+  background-color: #001d3d;
   color: white;
   text-align: center;
   padding: 10px;
