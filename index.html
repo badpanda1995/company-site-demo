@@ -1,31 +1,156 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MODUREX | Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MODUREX | Modular Architecture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #f46a21;
+      --dark: #1f1f1f;
+      --light: #f4f4f4;
+      --text: #2a2a2a;
+      --font-main: 'Inter', sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font-main);
+      color: var(--text);
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--dark);
+      color: white;
+      padding: 2rem 4rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    nav {
+      background: var(--light);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      gap: 2rem;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--primary);
+      transition: 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    section.hero {
+      background-color: var(--dark);
+      color: white;
+      padding: 6rem 4rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.85;
+    }
+    section.grid {
+      padding: 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: var(--light);
+      padding: 2rem;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0,0,0,0.04);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+    .card h3 {
+      color: var(--primary);
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <header><h1>MODUREX</h1></header>
+  <header>
+    <h1>MODUREX</h1>
+    <p>Modular Structures for Modern Environments</p>
+  </header>
+
   <nav>
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">Products</button>
-      <div class="dropdown-content">
-        <a href="#">A. Outdoor Structures</a>
-        <a href="#">B. Modular Home Series</a>
-        <a href="#">C. Utility Modules</a>
-        <a href="#">D. Construction Accessories</a>
-        <a href="#">E. Special Custom Units</a>
-      </div>
-    </div>
-    <a href="about.html">About</a>
-    <a href="inquiry.html">Inquiry</a>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Inquiry</a>
   </nav>
-  <main>
-    <h2>Welcome to MODUREX</h2>
-    <p>Explore our smart modular building products and discover how we simplify construction for modern living.</p>
-  </main>
-  <footer><p>© 2025 MODUREX. All rights reserved.</p></footer>
+
+  <section class="hero">
+    <h2>Reimagine Modular Design</h2>
+    <p>At MODUREX, we build smarter, more scalable spaces — from aluminum pavilions to container homes and custom outdoor systems.</p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h3>Outdoor Structures</h3>
+      <p>Pergolas, carports, umbrellas, and other exterior systems.</p>
+    </div>
+    <div class="card">
+      <h3>Modular Home Series</h3>
+      <p>Flexible, prefab housing for residential or temporary use.</p>
+    </div>
+    <div class="card">
+      <h3>Utility Modules</h3>
+      <p>Mobile toilets, showers, and support facilities.</p>
+    </div>
+    <div class="card">
+      <h3>Construction Accessories</h3>
+      <p>Site fencing, panels, and deployable structural components.</p>
+    </div>
+    <div class="card">
+      <h3>Special Custom Units</h3>
+      <p>Display pods, kiosks, or custom container structures.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MODUREX. Designed for intelligent, industrial modular construction.</p>
+  </footer>
 </body>
 </html>
