@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #fefefe;
-  color: #333;
+  color: #2A2A2A;
 }
 header {
   background-color: #2A2A2A;
@@ -24,16 +24,28 @@ main {
   padding: 30px;
   text-align: center;
 }
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
-.product-grid img {
-  max-width: 45%;
-  border-radius: 5px;
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.card {
+  background: #F4F4F4;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 250px;
+  text-decoration: none;
+  color: #2A2A2A;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.card:hover {
+  border-color: #F46A21;
 }
 footer {
   background-color: #2A2A2A;
