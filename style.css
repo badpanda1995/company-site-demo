@@ -28,24 +28,21 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-.categories {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
+form {
+  display: inline-block;
+  text-align: left;
 }
-.card {
-  background: #F4F4F4;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-  width: 250px;
-  text-decoration: none;
-  color: #2A2A2A;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
 }
-.card:hover {
-  border-color: #F46A21;
+input[type="submit"] {
+  background-color: #F46A21;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: auto;
 }
 footer {
   background-color: #2A2A2A;
