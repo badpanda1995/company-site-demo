@@ -13,20 +13,47 @@ header {
 nav {
   background-color: #F4F4F4;
   padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-nav a {
+nav a, .dropbtn {
   margin: 0 15px;
   color: #2A2A2A;
   text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 200px;
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #2A2A2A;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 main {
   padding: 30px;
   text-align: center;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
 }
 form {
   display: inline-block;
