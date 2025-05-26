@@ -21,61 +21,50 @@
       color: var(--dark);
     }
     header {
-      background: var(--light);
-      padding: 2rem;
+      background: var(--dark);
+      padding: 1.5rem;
       text-align: center;
     }
     header img {
       width: 180px;
-      margin-bottom: 1rem;
     }
     nav {
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      background: #f4f4f4;
+      flex-wrap: wrap;
+      background: var(--primary);
       padding: 1rem;
     }
+    nav .menu {
+      position: relative;
+      margin: 0 1rem;
+    }
     nav a {
+      color: white;
       text-decoration: none;
       font-weight: 600;
-      color: var(--dark);
-      position: relative;
-    }
-    nav a:hover {
-      color: var(--primary);
-    }
-    .dropdown {
-      position: relative;
+      padding: 0.5rem;
+      display: block;
     }
     .dropdown-content {
       display: none;
       position: absolute;
-      top: 40px;
+      top: 100%;
       left: 0;
       background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       min-width: 200px;
       z-index: 10;
     }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
     .dropdown-content a {
-      display: block;
-      padding: 8px;
       color: var(--dark);
-      text-decoration: none;
     }
-    .dropdown-content a.soon {
-      color: #aaa;
-      font-style: italic;
-      pointer-events: none;
+    .menu:hover .dropdown-content {
+      display: block;
     }
     .hero {
       background: url('hero-pergola.jpg') center/cover no-repeat;
-      height: 75vh;
+      height: 70vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -123,18 +112,39 @@
     <img src="modurex-logo.png" alt="MODUREX Logo" />
   </header>
   <nav>
-    <a href="#">Home</a>
-    <div class="dropdown">
-      <a href="#">Products</a>
+    <div class="menu"><a href="#">Home</a></div>
+    <div class="menu">
+      <a href="#">Outdoor Structures</a>
       <div class="dropdown-content">
-        <a href="#">Outdoor Structures</a>
-        <a class="soon">Modular Home Series (Coming Soon)</a>
-        <a class="soon">Utility Modules (Coming Soon)</a>
-        <a class="soon">Construction Accessories (Coming Soon)</a>
-        <a class="soon">Special Custom Units (Coming Soon)</a>
+        <a href="#">Aluminum Pergolas</a>
+        <a href="#">Carport Canopies</a>
       </div>
     </div>
-    <a href="MODUREX-Catalog.pdf" download>Downloads</a>
+    <div class="menu">
+      <a href="#" class="soon">Modular Home Series</a>
+      <div class="dropdown-content">
+        <a class="soon">Coming Soon</a>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="#" class="soon">Utility Modules</a>
+      <div class="dropdown-content">
+        <a class="soon">Coming Soon</a>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="#" class="soon">Construction Accessories</a>
+      <div class="dropdown-content">
+        <a class="soon">Coming Soon</a>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="#" class="soon">Special Custom Units</a>
+      <div class="dropdown-content">
+        <a class="soon">Coming Soon</a>
+      </div>
+    </div>
+    <div class="menu"><a href="MODUREX-Catalog.pdf" download>Downloads</a></div>
   </nav>
   <div class="hero">
     <h1>High-Quality Aluminum Pergolas</h1>
