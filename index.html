@@ -1,1 +1,151 @@
-MODUREX site rebrand HTML placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MODUREX | Modular Structures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #f46a21;
+      --dark: #2a2a2a;
+      --light: #ffffff;
+      --font: 'Inter', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: var(--font);
+      background: var(--light);
+      color: var(--dark);
+    }
+    header {
+      background: var(--light);
+      padding: 2rem;
+      text-align: center;
+    }
+    header img {
+      width: 180px;
+      margin-bottom: 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #f4f4f4;
+      padding: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--dark);
+      position: relative;
+    }
+    nav a:hover {
+      color: var(--primary);
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 10px;
+      min-width: 200px;
+      z-index: 10;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 8px;
+      color: var(--dark);
+      text-decoration: none;
+    }
+    .dropdown-content a.soon {
+      color: #aaa;
+      font-style: italic;
+      pointer-events: none;
+    }
+    .hero {
+      background: url('hero-pergola.jpg') center/cover no-repeat;
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .hero a {
+      padding: 0.75rem 2rem;
+      background: var(--primary);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .section {
+      padding: 3rem;
+      text-align: center;
+    }
+    .section a.button {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="modurex-logo.png" alt="MODUREX Logo" />
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <div class="dropdown">
+      <a href="#">Products</a>
+      <div class="dropdown-content">
+        <a href="#">Outdoor Structures</a>
+        <a class="soon">Modular Home Series (Coming Soon)</a>
+        <a class="soon">Utility Modules (Coming Soon)</a>
+        <a class="soon">Construction Accessories (Coming Soon)</a>
+        <a class="soon">Special Custom Units (Coming Soon)</a>
+      </div>
+    </div>
+    <a href="MODUREX-Catalog.pdf" download>Downloads</a>
+  </nav>
+  <div class="hero">
+    <h1>High-Quality Aluminum Pergolas</h1>
+    <a href="#">Get A Quote</a>
+  </div>
+  <div class="section">
+    <p>Need detailed specifications? Download our full product catalog:</p>
+    <a class="button" href="MODUREX-Catalog.pdf" download>Download PDF</a>
+  </div>
+  <footer>
+    <p>© 2025 MODUREX. All rights reserved. Designed for intelligent modular construction.</p>
+  </footer>
+</body>
+</html>
