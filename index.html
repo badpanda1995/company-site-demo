@@ -7,11 +7,7 @@
   <title>MODUREX</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #fff;
-    }
+    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #fff; }
     nav {
       background-color: white;
       position: fixed;
@@ -38,6 +34,23 @@
     }
     nav a:hover {
       color: #e67e22;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 2.5rem;
+      left: 0;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 0.5rem 1rem;
+    }
+    nav ul li:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 0.5rem 0;
+      white-space: nowrap;
     }
     .hero {
       margin-top: 80px;
@@ -100,10 +113,23 @@
 <body>
   <nav>
     <ul>
-      <li><a href="#">Outdoor Structures</a></li>
-      <li><a href="#">Modular Home Series</a></li>
-      <li><a href="#">Site Infrastructure</a></li>
-      <li><a href="quote.html">Get a Quote</a></li>
+      <li>
+        <a href="#">Outdoor Structures</a>
+        <div class="dropdown-content">
+          <a href="#">Aluminum Pergola</a>
+        </div>
+      </li>
+      <li>
+        <a href="#">Modular Home Series</a>
+      </li>
+      <li>
+        <a href="#">Site Infrastructure</a>
+        <div class="dropdown-content">
+          <a href="#">Construction Fence</a>
+          <a href="#">Mobile Toilet</a>
+        </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -113,7 +139,7 @@
     <div class="hero-text">
       <h1>MODUREX</h1>
       <p>Modular Elegance for Outdoor Living</p>
-      <a href="quote.html">Request a Quote</a>
+      <a href="contact.html">Contact Us</a>
     </div>
   </div>
 
