@@ -1,106 +1,122 @@
-<html>
-<head><title>MODUREX</title></head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MODUREX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+    }
+    nav {
+      background-color: white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2f2f2f;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #e67e22;
+    }
+    .hero {
+      margin-top: 80px;
+      width: 100%;
+      height: 90vh;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      animation: fade 12s infinite;
+    }
+    .hero img:nth-child(2) {
+      animation-delay: 6s;
+    }
+    @keyframes fade {
+      0% { opacity: 1; }
+      45% { opacity: 1; }
+      50% { opacity: 0; }
+      95% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 10px #000;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-text a {
+      padding: 12px 24px;
+      background-color: #e67e22;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+    footer {
+      background-color: #2f2f2f;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
 <body>
-  
+  <nav>
+    <ul>
+      <li><a href="#">Outdoor Structures</a></li>
+      <li><a href="#">Modular Home Series</a></li>
+      <li><a href="#">Site Infrastructure</a></li>
+      <li><a href="quote.html">Get a Quote</a></li>
+    </ul>
+  </nav>
 
-<style>
-  body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f6f6f6;
-    color: #2f2f2f;
-  }
-  nav {
-    background-color: #2f2f2f;
-    padding: 1rem 2rem;
-  }
-  nav ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
-  nav ul li {
-    position: relative;
-  }
-  nav ul li ul {
-    display: none;
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    background-color: #2f2f2f;
-    list-style: none;
-    padding: 0.5rem;
-  }
-  nav ul li:hover ul {
-    display: block;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  h1, h2 {
-    color: #e67e22;
-  }
-  .main {
-    padding: 3rem 2rem;
-  }
-  .quote-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 24px;
-    background-color: #e67e22;
-    color: white;
-    font-weight: bold;
-    border-radius: 6px;
-    text-decoration: none;
-  }
-  footer {
-    background-color: #2f2f2f;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  footer a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-</style>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
-<nav>
-  <ul>
-    <li>
-      <div>Outdoor Structures</div>
-      <ul>
-        <li><a href="outdoor/aluminum-pergola.html">Aluminum Pergola</a></li>
-      </ul>
-    </li>
-    <li>
-      <div>Modular Home Series</div>
-      <ul>
-        <li><a href="modular/container-homes.html">Container Homes</a></li>
-        <li><a href="modular/mobile-toilet.html">Mobile Toilet</a></li>
-      </ul>
-    </li>
-    <li>
-      <div>Site Infrastructure</div>
-      <ul>
-        <li><a href="site/construction-fence.html">Construction Fence</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-  <div class="main">
-    <h1>Welcome to MODUREX</h1>
-    <p>Your premium partner for modular outdoor and residential structures.</p>
+  <div class="hero">
+    <img src="assets/hero1.webp" alt="hero1">
+    <img src="assets/hero2.webp" alt="hero2">
+    <div class="hero-text">
+      <h1>MODUREX</h1>
+      <p>Modular Elegance for Outdoor Living</p>
+      <a href="quote.html">Request a Quote</a>
+    </div>
   </div>
+
   <footer>
     Follow us:
     <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">TikTok</a>
