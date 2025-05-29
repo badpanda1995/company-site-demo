@@ -2,24 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MODUREX | Outdoor Structures</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outdoor Structures | MODUREX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #f46a21;
+      --dark: #2a2a2a;
+      --light: #ffffff;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      margin: 0;
+    }
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    img.hero {
+      width: 100%;
+      max-height: 540px;
+      object-fit: cover;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2rem;
+      color: var(--primary);
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    a.button {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-top: 1.5rem;
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-  <header><h1>MODUREX</h1></header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-  </nav>
-  <main>
-    <h2>Outdoor Structures</h2>
-    <ul>
-      <li>Aluminum Pergolas</li>
-      <li>Carport Canopies</li>
-      <li>Patio Umbrellas</li>
-      <li>Garden Shelters</li>
-    </ul>
-  </main>
-  <footer><p>© 2025 MODUREX. All rights reserved.</p></footer>
+  <header>
+    <h1>Outdoor Structures</h1>
+  </header>
+  <img class="hero" src="aluminum-pergola.jpg" alt="Aluminum Pergola" />
+  <section>
+    <h1>Aluminum Pergolas</h1>
+    <p>Our high-end aluminum pergolas are designed for modern Canadian backyards. Made with powder-coated, rust-resistant aluminum frames, these structures offer exceptional durability, sleek aesthetics, and modular flexibility.</p>
+    <p>Standard size: <strong>10 ft x 13 ft x 9.2 ft height</strong></p>
+    <p>Ideal for patios, poolsides, and garden lounges. Installation available as an add-on service.</p>
+    <a class="button" href="#">Get A Quote</a>
+  </section>
+  <footer>
+    <p>© 2025 MODUREX. All rights reserved. Engineered for modular living.</p>
+  </footer>
 </body>
 </html>
