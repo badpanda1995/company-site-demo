@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Aluminum Pergola | MODUREX</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --main-dark: #2F2F2F;
@@ -30,6 +31,18 @@
       z-index: 1000;
     }
 
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav li {
+      position: relative;
+    }
+
     nav a {
       color: white;
       text-decoration: none;
@@ -38,6 +51,26 @@
 
     nav a:hover {
       color: var(--accent-pink);
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: var(--main-dark);
+      top: 100%;
+      left: 0;
+      min-width: 180px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      flex-direction: column;
+    }
+
+    .dropdown a {
+      padding: 0.25rem 0;
+    }
+
+    nav li:hover .dropdown {
+      display: flex;
     }
 
     .container {
@@ -58,7 +91,6 @@
     p {
       font-size: 1rem;
       line-height: 1.6;
-      color: var(--main-dark);
     }
 
     .cta {
@@ -102,10 +134,31 @@
 <body>
 
   <nav>
-    <a href="#">Outdoor Structures</a>
-    <a href="#">Modular Home Series</a>
-    <a href="#">Site Infrastructure</a>
-    <a href="quote.html">Get a Quote</a>
+    <ul>
+      <li>
+        <a href="#">Outdoor Structures</a>
+        <div class="dropdown">
+          <a href="aluminum-pergola.html">Aluminum Pergola</a>
+          <a href="#">Category B</a>
+          <a href="#">Category C</a>
+          <a href="#">Category D</a>
+        </div>
+      </li>
+      <li>
+        <a href="#">Modular Home Series</a>
+        <div class="dropdown">
+          <a href="container-homes.html">Container Homes</a>
+          <a href="mobile-toilet.html">Mobile Toilet</a>
+        </div>
+      </li>
+      <li>
+        <a href="#">Site Infrastructure</a>
+        <div class="dropdown">
+          <a href="construction-fence.html">Construction Fence</a>
+        </div>
+      </li>
+      <li><a href="quote.html">Get a Quote</a></li>
+    </ul>
   </nav>
 
   <div class="container">
