@@ -5,23 +5,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MODUREX</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --main-dark: #2F2F2F;
+      --concrete-gray: #A3A3A3;
+      --accent-pink: #EB5E78;
+    }
+
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-    }
-    nav {
-      background-color: #2f2f2f;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--main-dark);
       color: white;
+    }
+
+    nav {
+      background-color: var(--main-dark);
+      color: white;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
       position: fixed;
       width: 100%;
       z-index: 1000;
     }
+
     nav ul {
       list-style: none;
       display: flex;
@@ -29,34 +38,41 @@
       margin: 0;
       padding: 0;
     }
+
     nav li {
       position: relative;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       font-weight: 600;
     }
+
     nav li:hover .dropdown {
       display: block;
     }
+
     .dropdown {
       display: none;
       position: absolute;
       top: 100%;
       left: 0;
-      background-color: #444;
+      background-color: var(--main-dark);
       padding: 1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
+
     .dropdown a {
       display: block;
       padding: 0.5rem 1rem;
       color: white;
     }
+
     .dropdown a:hover {
-      background-color: #555;
+      background-color: var(--accent-pink);
     }
+
     .hero {
       margin-top: 80px;
       width: 100%;
@@ -64,6 +80,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .hero img {
       width: 100%;
       height: 100%;
@@ -71,16 +88,17 @@
       position: absolute;
       animation: fade 12s infinite;
     }
+
     .hero img:nth-child(2) {
       animation-delay: 6s;
     }
+
     @keyframes fade {
-      0% { opacity: 1; }
-      45% { opacity: 1; }
-      50% { opacity: 0; }
-      95% { opacity: 0; }
+      0%, 45% { opacity: 1; }
+      50%, 95% { opacity: 0; }
       100% { opacity: 1; }
     }
+
     .hero-text {
       position: absolute;
       top: 50%;
@@ -90,28 +108,41 @@
       color: white;
       text-shadow: 2px 2px 10px #000;
     }
+
     .hero-text h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
+
     .hero-text a {
       padding: 12px 24px;
-      background-color: #e67e22;
+      background-color: var(--accent-pink);
       color: white;
       text-decoration: none;
       font-weight: bold;
       border-radius: 6px;
     }
+
+    .hero-text a:hover {
+      background-color: var(--main-dark);
+      color: var(--accent-pink);
+    }
+
     footer {
-      background-color: #2f2f2f;
+      background-color: var(--main-dark);
       color: white;
       padding: 1rem;
       text-align: center;
     }
+
     footer a {
       color: white;
       margin: 0 10px;
       text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--accent-pink);
     }
   </style>
 </head>
