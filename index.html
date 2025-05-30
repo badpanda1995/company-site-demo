@@ -7,15 +7,20 @@
   <title>MODUREX</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #fff; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
     nav {
-      background-color: white;
+      background-color: #2f2f2f;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
       position: fixed;
       width: 100%;
-      top: 0;
-      z-index: 10;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
     }
     nav ul {
       list-style: none;
@@ -24,33 +29,33 @@
       margin: 0;
       padding: 0;
     }
-    nav ul li {
+    nav li {
       position: relative;
     }
     nav a {
+      color: white;
       text-decoration: none;
-      color: #2f2f2f;
       font-weight: 600;
     }
-    nav a:hover {
-      color: #e67e22;
+    nav li:hover .dropdown {
+      display: block;
     }
-    .dropdown-content {
+    .dropdown {
       display: none;
       position: absolute;
-      top: 2.5rem;
+      top: 100%;
       left: 0;
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #444;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .dropdown a {
+      display: block;
       padding: 0.5rem 1rem;
+      color: white;
     }
-    nav ul li:hover .dropdown-content {
-      display: block;
-    }
-    .dropdown-content a {
-      display: block;
-      padding: 0.5rem 0;
-      white-space: nowrap;
+    .dropdown a:hover {
+      background-color: #555;
     }
     .hero {
       margin-top: 80px;
@@ -115,21 +120,16 @@
     <ul>
       <li>
         <a href="#">Outdoor Structures</a>
-        <div class="dropdown-content">
-          <a href="#">Aluminum Pergola</a>
+        <div class="dropdown">
+          <a href="aluminum-pergola.html">Aluminum Pergola</a>
+          <a href="#">Category B</a>
+          <a href="#">Category C</a>
+          <a href="#">Category D</a>
         </div>
       </li>
-      <li>
-        <a href="#">Modular Home Series</a>
-      </li>
-      <li>
-        <a href="#">Site Infrastructure</a>
-        <div class="dropdown-content">
-          <a href="#">Construction Fence</a>
-          <a href="#">Mobile Toilet</a>
-        </div>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Modular Home Series</a></li>
+      <li><a href="#">Site Infrastructure</a></li>
+      <li><a href="quote.html">Get a Quote</a></li>
     </ul>
   </nav>
 
@@ -139,7 +139,7 @@
     <div class="hero-text">
       <h1>MODUREX</h1>
       <p>Modular Elegance for Outdoor Living</p>
-      <a href="contact.html">Contact Us</a>
+      <a href="quote.html">Request a Quote</a>
     </div>
   </div>
 
