@@ -7,174 +7,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --main-dark: #2F2F2F;
-      --concrete-gray: #A3A3A3;
-      --accent-pink: #EB5E78;
-    }
-
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
       background-color: #f2f2f2;
-      color: var(--main-dark);
+      margin: 0;
     }
-
     nav {
-      background-color: var(--main-dark);
+      background-color: #2F2F2F;
       padding: 1rem 2rem;
       display: flex;
       gap: 2rem;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
     }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 2rem;
-    }
-
-    nav li {
-      position: relative;
-    }
-
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
-
     nav a:hover {
-      color: var(--accent-pink);
+      color: #EB5E78;
     }
-
-    .dropdown {
-      display: none;
-      position: absolute;
-      background-color: var(--main-dark);
-      top: 100%;
-      left: 0;
-      min-width: 180px;
-      padding: 1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      flex-direction: column;
-    }
-
-    .dropdown a {
-      padding: 0.25rem 0;
-    }
-
-    nav li:hover .dropdown {
-      display: flex;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 120px auto 40px;
-      padding: 2rem;
+    .card {
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
     }
-
-    h1 {
-      color: var(--main-dark);
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .card h2 {
+      margin-top: 0;
     }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
     .cta {
-      margin-top: 2rem;
-    }
-
-    .cta a {
       display: inline-block;
-      background-color: var(--accent-pink);
+      padding: 10px 20px;
+      background-color: #EB5E78;
       color: white;
-      padding: 12px 24px;
-      text-decoration: none;
       border-radius: 6px;
-      font-weight: bold;
-    }
-
-    .cta a:hover {
-      background-color: var(--main-dark);
-      color: var(--accent-pink);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: var(--main-dark);
-      color: white;
-      margin-top: 60px;
-    }
-
-    footer a {
-      color: white;
-      margin: 0 10px;
       text-decoration: none;
-    }
-
-    footer a:hover {
-      color: var(--accent-pink);
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
   <nav>
-    <ul>
-      <li>
-        <a href="#">Outdoor Structures</a>
-        <div class="dropdown">
-          <a href="aluminum-pergola.html">Aluminum Pergola</a>
-          <a href="#">Category B</a>
-          <a href="#">Category C</a>
-          <a href="#">Category D</a>
-        </div>
-      </li>
-      <li>
-        <a href="#">Modular Home Series</a>
-        <div class="dropdown">
-          <a href="container-homes.html">Container Homes</a>
-          <a href="mobile-toilet.html">Mobile Toilet</a>
-        </div>
-      </li>
-      <li>
-        <a href="#">Site Infrastructure</a>
-        <div class="dropdown">
-          <a href="construction-fence.html">Construction Fence</a>
-        </div>
-      </li>
-      <li><a href="quote.html">Get a Quote</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="#">Outdoor Structures</a>
+    <a href="#">Modular Home Series</a>
+    <a href="#">Site Infrastructure</a>
   </nav>
-
-  <div class="container">
-    <h1>Aluminum Pergola</h1>
+  <div class="card">
+    <h2>Aluminum Pergola</h2>
     <p>This section is currently under construction. Please check back soon.</p>
-
-    <div class="cta">
-      <a href="quote.html">Get a Quote</a>
-    </div>
+    <a href="quote.html" class="cta">Get a Quote</a>
   </div>
-
-  <footer>
-    Follow us:
-    <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">TikTok</a>
-    <div style="margin-top: 10px;">© 2025 MODUREX Inc. All rights reserved.</div>
-  </footer>
-
 </body>
 </html>
