@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MODUREX | Modular Outdoor Design</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MODUREX | Modular Outdoor Living</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
       --main-dark: #2F2F2F;
@@ -16,168 +15,72 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f2f2f2;
+      background-color: var(--concrete-gray);
       color: var(--main-dark);
     }
 
-    nav {
+    header {
       background-color: var(--main-dark);
-      padding: 1rem 2rem;
+      color: white;
+      padding: 20px 40px;
       display: flex;
-      gap: 2rem;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 2rem;
-    }
-
-    nav li {
-      position: relative;
+      justify-content: space-between;
+      align-items: center;
     }
 
     nav a {
       color: white;
+      margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: var(--accent-pink);
-    }
-
-    .dropdown {
-      display: none;
-      position: absolute;
-      background-color: var(--main-dark);
-      top: 100%;
-      left: 0;
-      min-width: 180px;
-      padding: 1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      flex-direction: column;
-    }
-
-    .dropdown a {
-      padding: 0.25rem 0;
-    }
-
-    nav li:hover .dropdown {
-      display: flex;
+      font-weight: 600;
     }
 
     .hero {
-      margin-top: 100px;
-      position: relative;
+      background: url('hero1.webp') center/cover no-repeat;
+      height: 90vh;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 4rem 6rem;
-      background: white;
-      border-radius: 8px;
-      max-width: 1100px;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 100px 80px;
+      position: relative;
     }
 
-    .hero-text h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero-text p {
-      font-size: 1.2rem;
-      color: var(--main-dark);
-    }
-
-    .quote-box {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-    }
-
-    .quote-box a {
+    .hero-box {
       background-color: var(--accent-pink);
       color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
+      padding: 14px 26px;
+      font-weight: 600;
+      font-size: 14px;
       border-radius: 6px;
-    }
-
-    .quote-box a:hover {
-      background-color: var(--main-dark);
-      color: var(--accent-pink);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
     footer {
-      text-align: center;
-      padding: 1rem;
       background-color: var(--main-dark);
       color: white;
-      margin-top: 60px;
-    }
-
-    footer a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: var(--accent-pink);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-
-  <nav>
-    <ul>
-      <li>
-        <a href="#">Outdoor Structures</a>
-        <div class="dropdown">
-          <a href="aluminum-pergola.html">Aluminum Pergola</a>
-        </div>
-      </li>
-      <li>
-        <a href="#">Modular Home Series</a>
-        <div class="dropdown">
-          <a href="container-homes.html">Container Homes</a>
-          <a href="mobile-toilet.html">Mobile Toilet</a>
-        </div>
-      </li>
-      <li>
-        <a href="#">Site Infrastructure</a>
-        <div class="dropdown">
-          <a href="construction-fence.html">Construction Fence</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <div><strong>MODUREX</strong></div>
+    <nav>
+      <a href="#">Outdoor Structures</a>
+      <a href="#">Modular Home Series</a>
+      <a href="#">Site Infrastructure</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
   <div class="hero">
-    <div class="quote-box">
-      <a href="quote.html">Get a Quote</a>
-    </div>
-    <div class="hero-text">
-      <h1>Welcome to MODUREX</h1>
-      <p>Modular Elegance for Outdoor Living</p>
-    </div>
+    <div class="hero-box">Get a Quote</div>
   </div>
 
   <footer>
-    Follow us:
-    <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">TikTok</a>
-    <div style="margin-top: 10px;">© 2025 MODUREX Inc. All rights reserved.</div>
+    © 2025 MODUREX Inc. | Instagram | Facebook | TikTok
   </footer>
-
 </body>
 </html>
