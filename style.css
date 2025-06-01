@@ -1,79 +1,75 @@
+
+:root {
+  --main-dark: #2F2F2F;
+  --concrete-gray: #A3A3A3;
+  --accent-pink: #EB5E78;
+  --industrial-blue: #1C1E26;
+}
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #fefefe;
-  color: #2A2A2A;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--industrial-blue);
+  color: white;
+}
+.logo {
+  height: 40px;
+  margin: 10px;
 }
 header {
-  background-color: #2A2A2A;
-  color: #F46A21;
-  padding: 20px;
-  text-align: center;
-}
-nav {
-  background-color: #F4F4F4;
-  padding: 10px;
+  background-color: var(--main-dark);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
-nav a, .dropbtn {
-  margin: 0 15px;
-  color: #2A2A2A;
-  text-decoration: none;
-  background: none;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+.menu {
+  list-style: none;
+  display: flex;
 }
-.dropdown {
+.menu li {
   position: relative;
-  display: inline-block;
 }
-.dropdown-content {
+.menu > li {
+  margin: 0 1rem;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+.menu li:hover .submenu {
+  display: block;
+}
+.submenu {
   display: none;
   position: absolute;
-  background-color: #fff;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-  min-width: 200px;
+  background-color: var(--main-dark);
+  list-style: none;
+  top: 100%;
+  left: 0;
+  padding: 0;
 }
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-  color: #2A2A2A;
-  text-decoration: none;
-  border-bottom: 1px solid #eee;
-}
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-main {
-  padding: 30px;
-  text-align: center;
-}
-form {
-  display: inline-block;
-  text-align: left;
-}
-input, textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 4px;
-}
-input[type="submit"] {
-  background-color: #F46A21;
+.submenu li a {
+  padding: 0.5rem 1rem;
   color: white;
-  border: none;
-  cursor: pointer;
-  width: auto;
+}
+.cta {
+  background-color: var(--accent-pink);
+  color: white;
+  padding: 10px 20px;
+  margin-right: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: var(--concrete-gray);
 }
 footer {
-  background-color: #2A2A2A;
-  color: white;
-  padding: 10px;
   text-align: center;
+  background-color: var(--main-dark);
+  padding: 1rem;
+  color: var(--concrete-gray);
 }
