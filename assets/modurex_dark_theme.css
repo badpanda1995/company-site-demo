@@ -1,0 +1,21 @@
+:root {
+  --primary--modern-pink: #e94d88;
+  --text--gunmetal-gray: #58585a;
+  --logo-dark-gray-side: #3c3c3c;
+  --background--industrial-blue-black: #181c23;
+}
+
+body {
+  background-color: var(--background-industrial-blue-black);
+  color: var(--text-gunmetal-gray);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--primary-modern-pink);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
