@@ -5,42 +5,46 @@
   --accent-pink: #EB5E78;
   --industrial-blue: #1C1E26;
 }
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--industrial-blue);
   color: white;
 }
-.logo {
-  height: 50px;
-  margin: 10px;
-}
+
 header {
   background-color: var(--main-dark);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
+.logo {
+  height: 50px;
+}
+
 .menu {
   list-style: none;
   display: flex;
+  gap: 2rem;
 }
+
 .menu li {
   position: relative;
 }
-.menu > li {
-  margin: 0 1rem;
-}
+
 .menu a {
   color: white;
   text-decoration: none;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   display: block;
 }
-.menu li:hover .submenu {
-  display: block;
-}
+
 .submenu {
   display: none;
   position: absolute;
@@ -48,28 +52,40 @@ header {
   list-style: none;
   top: 100%;
   left: 0;
-  padding: 0;
+  min-width: 180px;
+  border: 1px solid var(--concrete-gray);
 }
+
+.menu li:hover .submenu {
+  display: block;
+}
+
 .submenu li a {
   padding: 0.5rem 1rem;
   color: white;
 }
-.cta {
+
+.cta-quote {
   background-color: var(--accent-pink);
   color: white;
   padding: 10px 20px;
-  margin-right: 1rem;
-  border-radius: 5px;
+  margin: 0 2rem;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
 }
+
 .hero {
-  padding: 100px 20px;
-  text-align: center;
   background-color: var(--concrete-gray);
-}
-footer {
   text-align: center;
+  padding: 120px 20px;
+  color: var(--main-dark);
+}
+
+footer {
   background-color: var(--main-dark);
+  text-align: center;
   padding: 1rem;
+  font-size: 0.9rem;
   color: var(--concrete-gray);
 }
